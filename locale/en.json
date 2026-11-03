@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Fat Fish Sings",
+    "description": "Let your agent learn songs on its own: name a song, it finds the original, learns it, and sings it in the voice you provide. Requires the qqbot-music singing service."
+  }
+}

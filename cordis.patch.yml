@@ -1,0 +1,21 @@
+# Bundle patch for dsh-zeroshot-sing.
+# Values below are the defaults; omit any key to keep the built-in default.
+- insert:
+    - id: qqbot-music
+      name: dsh-zeroshot-sing
+      config:
+        # qqbot-music 唱歌服务地址（python -m qqbot_music serve）
+        url: http://127.0.0.1:8766
+        # 服务没开时用来启动它的命令；留空就要你自己先开服务
+        startCommand: ""
+        # 启动命令的工作目录（qqbot-music 目录）
+        startCwd: ""
+        startSeconds: 120
+        # 唱好的 WAV 放哪；空 = ~/Music/qqbot-music
+        outputDir: ""
+        # 唱好后在本机放出来
+        play: true
+        # 是否允许唱整首（整首要好几分钟）
+        allowFull: true
+        chorusTimeout: 600
+        fullTimeout: 3600

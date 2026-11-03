@@ -1,0 +1,57 @@
+{
+  "name": "dsh-zeroshot-sing",
+  "version": "0.1.0",
+  "description": "让你的大肥鱼可以自己主动学习歌曲：点歌后自己去找原唱、自己学会，用你给的音色唱出来（零样本换声，4G 显卡能跑）。需要另外运行 qqbot-music 唱歌服务。",
+  "license": "GPL-3.0-or-later",
+  "author": "小小墨",
+  "type": "module",
+  "main": "./lib/index.js",
+  "icon": "icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\""
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "大肥鱼",
+    "唱歌",
+    "singing",
+    "voice-conversion",
+    "svc",
+    "music"
+  ],
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.2"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aa1805370178-dot/dsh-zeroshot-sing.git"
+  },
+  "homepage": "https://github.com/aa1805370178-dot/dsh-zeroshot-sing#readme",
+  "bugs": {
+    "url": "https://github.com/aa1805370178-dot/dsh-zeroshot-sing/issues"
+  }
+}
